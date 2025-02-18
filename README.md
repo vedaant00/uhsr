@@ -1,34 +1,55 @@
+```markdown
+<div align="center">
+  <img src="https://your-image-link-here.com/uhsr-logo.png" alt="UHSR Logo" width="300">
+  <hr>
+  <br/>
+</div>
+
 # Unified Hyperbolic Spectral Retrieval (UHSR)
 
-Unified Hyperbolic Spectral Retrieval (UHSR) is a novel text retrieval algorithm that fuses lexical and semantic search methods into a unified, robust, and scalable system. UHSR combines BM25 lexical scoring with dense vector semantic similarity (supporting user-selectable metrics such as cosine, euclidean, or Mahalanobis) via advanced techniques including logistic normalization, harmonic fusion, and spectral re-ranking based on graph Laplacian analysis.
+Unified Hyperbolic Spectral Retrieval (UHSR) is a novel text retrieval algorithm that fuses lexical search (using BM25) with semantic search (using dense embeddings) into a unified, robust, and scalable system. UHSR employs advanced techniques such as logistic normalization, harmonic fusion, and spectral re-ranking based on graph Laplacian analysis to generate interpretable relevance scores in the [0,1] range. It supports multiple similarity metrics—cosine, euclidean, and Mahalanobis—ensuring flexibility and adaptability across diverse datasets.
 
-## Features
+[![Python Version](https://img.shields.io/badge/python-3.6%2B-blue.svg)](https://www.python.org/downloads/)
+[![PyPI Latest Release](https://img.shields.io/pypi/v/uhsr-retrieval.svg)](https://pypi.org/project/uhsr-retrieval/)
+[![License](https://img.shields.io/pypi/l/uhsr-retrieval.svg)](https://github.com/yourusername/uhsr-retrieval/blob/main/LICENSE)
+![](https://img.shields.io/pypi/dm/uhsr-retrieval)
+![GitHub stars](https://img.shields.io/github/stars/vedaant00/uhsr-retrieval?style=social)
 
-- **Hybrid Retrieval:** Integrates BM25 (lexical) and semantic (vector) search.
-- **Advanced Fusion:** Applies logistic normalization to map scores into [0,1] and fuses them using a harmonic mean.
-- **Spectral Re-Ranking:** Uses spectral analysis (Fiedler vector from the graph Laplacian) to boost candidates that are central in the candidate set.
-- **Metric Flexibility:** Supports multiple semantic similarity metrics: cosine, euclidean, and Mahalanobis.
-- **Scalable and Robust:** Designed to work with both small and large datasets using FAISS for fast approximate nearest neighbor search.
-- **Interpretable Scores:** Final relevance scores are normalized to the [0,1] range.
+## What is UHSR?
+
+UHSR is a unified text retrieval framework that effectively combines:
+- **Lexical Search:** Utilizes BM25 to capture exact keyword relevance.
+- **Semantic Search:** Leverages dense embeddings and user-selectable similarity metrics (cosine, euclidean, or Mahalanobis) to capture contextual meaning.
+- **Advanced Fusion Techniques:** Applies logistic normalization and harmonic fusion to merge BM25 and semantic scores.
+- **Spectral Re-Ranking:** Uses spectral analysis (via the graph Laplacian and Fiedler vector) to re-rank candidates based on their centrality, ensuring robust and interpretable relevance scores.
+
+## Main Features
+
+- **Hybrid Retrieval:** Seamlessly integrates BM25 and semantic search.
+- **Advanced Fusion:** Combines scores using logistic normalization and harmonic fusion.
+- **Spectral Re-Ranking:** Boosts central candidates using graph Laplacian analysis.
+- **Metric Flexibility:** Supports cosine, euclidean, and Mahalanobis similarity.
+- **Interpretable Scoring:** Final scores are normalized to the [0,1] range.
+- **Scalable:** Utilizes FAISS for fast approximate nearest neighbor search, suitable for both small and large datasets.
 
 ## Novel Contributions
 
-- **Unified Fusion Method:** Novel combination of BM25 and semantic scores through logistic normalization and harmonic fusion.
-- **Spectral Re-Ranking:** Incorporates spectral analysis to enhance the ranking of candidates based on centrality.
-- **User-Selectable Similarity Metrics:** Offers flexibility in choosing the similarity measure that best suits your data.
-- **End-to-End Retrieval Pipeline:** From raw text to final ranked documents with interpretable scores.
+- **Unified Fusion Method:** A novel combination of BM25 and semantic scores through logistic normalization and harmonic fusion.
+- **Spectral Re-Ranking:** Incorporates spectral analysis to enhance candidate ranking based on centrality.
+- **User-Selectable Metrics:** Offers flexibility in choosing the best similarity measure for your data.
+- **End-to-End Pipeline:** Provides a complete retrieval framework that produces interpretable, normalized relevance scores.
 
 ## Installation
 
-Clone the repository and install the required dependencies.
+Clone the repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/yourusername/uhsr-retrieval.git
+git clone https://github.com/vedaant00/uhsr-retrieval.git
 cd uhsr-retrieval
 pip install -r requirements.txt
 ```
 
-*Note:* The package uses `faiss-cpu` by default. For GPU support, install with:
+*Note:* By default, the package uses `faiss-cpu`. For GPU support, install with:
 
 ```bash
 pip install uhsr-retrieval[gpu]
@@ -36,7 +57,7 @@ pip install uhsr-retrieval[gpu]
 
 ## Usage
 
-Below is an example of how to use UHSR in your own Python code:
+Here's an example of how to use UHSR in your Python project:
 
 ```python
 from sentence_transformers import SentenceTransformer
@@ -52,7 +73,7 @@ documents = [
     "Microsoft acquires a gaming company"
 ]
 
-# Load an embedding model (e.g., all-MiniLM-L6-v2)
+# Load the embedding model (e.g., all-MiniLM-L6-v2)
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Compute document embeddings (normalized)
@@ -96,8 +117,21 @@ uhsr-retrieval/
 
 This project is licensed under the MIT License.
 
+## Contributing
+
+Contributions, bug reports, and suggestions are welcome! Please feel free to submit issues or pull requests on GitHub.
+
+## Getting Help
+
+For usage questions or support, please open an issue on the [GitHub repository](https://github.com/vedaant00/uhsr-retrieval).
+
 ## Conclusion
 
-UHSR is a novel and unified text retrieval framework that effectively combines lexical and semantic signals through advanced normalization, fusion, and spectral re-ranking techniques. Its interpretable scoring and flexibility in choosing similarity metrics make it a strong candidate for further research and practical applications. Contributions and improvements from the community are welcome!
+UHSR is a novel and unified text retrieval framework that combines lexical and semantic signals through advanced normalization, fusion, and spectral re-ranking techniques. Its interpretable scoring and metric flexibility make it an innovative tool for both research and practical applications. We welcome contributions and improvements from the community!
+
+---
+
+*This package is intended for research and educational purposes.*
+```
 
 ---
