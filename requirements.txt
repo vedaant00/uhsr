@@ -1,0 +1,3 @@
+numpy
+sentence-transformers
+# faiss dependency should be installed as per extras in setup.py
