@@ -1,4 +1,3 @@
-```markdown
 <div align="center">
   <img src="https://your-image-link-here.com/uhsr-logo.png" alt="UHSR Logo" width="300">
   <hr>
