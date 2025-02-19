@@ -1,26 +1,28 @@
 from setuptools import setup, find_packages
-import os
 
+# Read the long project description
 with open("PROJECT_DESCRIPTION.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
     name='uhsr',
-    version='0.1.0',
+    version='0.2.6',  # Incremented version to reflect updates
     description='Unified Hyperbolic Spectral Retrieval (UHSR) - a novel text retrieval algorithm combining lexical and semantic search.',
     long_description=long_description,
     long_description_content_type="text/markdown",
     author='Vedaant Singh',
-    url='https://github.com/vedaant2000/uhsr-retrieval',
+    url='https://github.com/vedaant00/uhsr',
     keywords=[
-        'uhsr', 'text retrieval', 'BM25', 'FAISS', 'semantic search', 
-        'lexical search', 'spectral re-ranking', 'machine learning', 'NLP'
+        'uhsr', 'text retrieval', 'BM25', 'FAISS', 'Pinecone', 'vector search',
+        'semantic search', 'lexical search', 'spectral re-ranking', 'machine learning', 'NLP'
     ],
     packages=find_packages(),
     python_requires='>=3.6',
     install_requires=[
         'numpy',
-        'sentence-transformers'
+        'sentence-transformers',
+        'pinecone-client',
+        'openai'
     ],
     extras_require={
         'gpu': ['faiss-gpu'],

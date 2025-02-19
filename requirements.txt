@@ -1,3 +1,5 @@
 numpy
 sentence-transformers
+pinecone-client
+openai
 # faiss dependency should be installed as per extras in setup.py

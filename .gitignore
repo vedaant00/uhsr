@@ -29,5 +29,6 @@ dist/
 *.whl
 
 # Ignore UHSR-specific files
+dist/
 uhsr.egg-info/
 PROJECTDESCRIPTION.md
