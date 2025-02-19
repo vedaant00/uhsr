@@ -31,4 +31,5 @@ dist/
 # Ignore UHSR-specific files
 dist/
 uhsr.egg-info/
-PROJECTDESCRIPTION.md
+PROJECT_DESCRIPTION.md
+logo.png
