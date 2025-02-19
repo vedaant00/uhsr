@@ -61,12 +61,12 @@ UHSR unifies **lexical and semantic retrieval** into a single framework:
 
 ### **1️⃣ Install via pip**
 ```bash
-pip install uhsr-retrieval
+pip install uhsr[cpu]
 ```
 
 ### **2️⃣ (Optional) Enable GPU Acceleration**
 ```bash
-pip install uhsr-retrieval[gpu]
+pip install uhsr[gpu]
 ```
 
 ### **3️⃣ (Optional) Enable Pinecone for Cloud-based Retrieval**
@@ -77,13 +77,6 @@ pip install pinecone-client
 ### **4️⃣ (Optional) Enable OpenAI Reranking**
 ```bash
 pip install openai
-```
-
-### **5️⃣ Clone for Development**
-```bash
-git clone https://github.com/vedaant00/uhsr-retrieval.git
-cd uhsr-retrieval
-pip install -r requirements.txt
 ```
 
 ---
