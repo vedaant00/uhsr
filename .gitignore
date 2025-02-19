@@ -1,0 +1,33 @@
+# Ignore Python bytecode and cache files
+__pycache__/
+*.py[cod]
+*.so
+*.DS_Store
+
+# Ignore virtual environments
+venv/
+env/
+.venv/
+
+# Ignore build files
+build/
+dist/
+*.egg-info/
+
+# Ignore logs and debug files
+*.log
+*.out
+*.err
+
+# Ignore IDE/editor-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Ignore Python packaging files
+*.tar.gz
+*.whl
+
+# Ignore UHSR-specific files
+uhsr.egg-info/
+PROJECTDESCRIPTION.md

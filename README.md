@@ -8,10 +8,15 @@
 
 Unified Hyperbolic Spectral Retrieval (UHSR) is a novel text retrieval algorithm that fuses lexical search (using BM25) with semantic search (using dense embeddings) into a unified, robust, and scalable system. UHSR employs advanced techniques such as logistic normalization, harmonic fusion, and spectral re-ranking based on graph Laplacian analysis to generate interpretable relevance scores in the [0,1] range. It supports multiple similarity metrics—cosine, euclidean, and Mahalanobis—ensuring flexibility and adaptability across diverse datasets.
 
-[![Python Version](https://img.shields.io/badge/python-3.6%2B-blue.svg)](https://www.python.org/downloads/)
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
+[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
 [![PyPI Latest Release](https://img.shields.io/pypi/v/uhsr-retrieval.svg)](https://pypi.org/project/uhsr/0.1.0/)
-[![License](https://img.shields.io/pypi/l/uhsr-retrieval.svg)](https://github.com/vedaant00/uhsr/blob/main/LICENSE)
-![](https://pypi.org/project/uhsr/0.1.0/)
+
+[![Package Status](https://img.shields.io/pypi/status/uhsr.svg)](https://pypi.org/project/uhsr/)
+[![License](https://img.shields.io/pypi/l/uhsr.svg)](https://github.com/vedaant00/uhsr/blob/main/LICENSE)
+![](https://img.shields.io/pypi/dm/uhsr)
+
 ![GitHub stars](https://img.shields.io/github/stars/vedaant00/uhsr?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/vedaant00/uhsr?style=social)
 ![](https://komarev.com/ghpvc/?username=vedaant00&style=flat-square)
