@@ -19,9 +19,9 @@ UHSR is a **next-generation hybrid text retrieval model** that seamlessly integr
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
-[![PyPI Latest Release](https://img.shields.io/pypi/v/uhsr-retrieval.svg)](https://pypi.org/project/uhsr/0.1.0/)
+[![PyPI Latest Release](https://img.shields.io/pypi/v/uhsr-retrieval.svg)](https://pypi.org/project/uhsr)
 
-[![Package Status](https://img.shields.io/pypi/status/uhsr.svg)](https://pypi.org/project/uhsr/)
+[![Package Status](https://img.shields.io/pypi/status/uhsr.svg)](https://pypi.org/project/uhsr)
 [![License](https://img.shields.io/pypi/l/uhsr.svg)](https://github.com/vedaant00/uhsr/blob/main/LICENSE)
 ![](https://img.shields.io/pypi/dm/uhsr)
 
