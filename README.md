@@ -200,4 +200,6 @@ uhsr-retrieval/
 
 ---
 
+_Learn More about this package on [Medium](https://vedaantsingh706.medium.com/revolutionizing-text-retrieval-with-uhsr-a-hybrid-approach-combining-lexical-semantic-spectral-6c7e28c3e7d9)._
+
 🚀 **Try UHSR today & supercharge your search!** 🎯

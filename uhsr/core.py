@@ -123,7 +123,7 @@ class UHSR:
         """
         return 2.0 / ((1.0 / (s1 + eps)) + (1.0 / (s2 + eps)))
 
-    def retrieve(self, query, query_embedding, top_k=5, metric='cosine', gamma=0.7, rerank=False):
+    def retrieve(self, query, query_embedding, top_k=5, metric='cosine', gamma=0.3, rerank=False):
         """
         Retrieves the top-ranked documents for a given query using BM25 + Semantic Search (FAISS/Pinecone) + Spectral Re-Ranking.
 

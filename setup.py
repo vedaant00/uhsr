@@ -6,7 +6,7 @@ with open("PROJECT_DESCRIPTION.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='uhsr',
-    version='0.2.6',  # Incremented version to reflect updates
+    version='0.2.8',  # Incremented version to reflect updates
     description='Unified Hyperbolic Spectral Retrieval (UHSR) - a novel text retrieval algorithm combining lexical and semantic search.',
     long_description=long_description,
     long_description_content_type="text/markdown",

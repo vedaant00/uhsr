@@ -57,6 +57,8 @@ UHSR is designed for:
 ## 📂 **Code & Documentation**
 For complete documentation, usage examples, and implementation details, visit the **[GitHub repository](https://github.com/vedaant00/uhsr).**
 
+_Learn More about this package on [Medium](https://vedaantsingh706.medium.com/revolutionizing-text-retrieval-with-uhsr-a-hybrid-approach-combining-lexical-semantic-spectral-6c7e28c3e7d9)._
+
 ---
 
 ### 🔥 **Try UHSR today and revolutionize your search engine!** 🚀
