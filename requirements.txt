@@ -2,4 +2,5 @@ numpy
 sentence-transformers
 pinecone-client
 openai
+pytest>=8.0.0
 # faiss dependency should be installed as per extras in setup.py
