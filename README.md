@@ -29,10 +29,8 @@ UHSR is a **next-generation hybrid text retrieval model** that seamlessly integr
   <a href="https://pypi.org/project/uhsr"><img src="https://img.shields.io/pypi/v/uhsr-retrieval.svg" alt="PyPI Version"></a>
   <a href="https://pypi.org/project/uhsr"><img src="https://img.shields.io/pypi/status/uhsr.svg" alt="PyPI Status"></a>
   <a href="https://github.com/vedaant00/uhsr/blob/main/LICENSE"><img src="https://img.shields.io/pypi/l/uhsr.svg" alt="License"></a>
-  <img src="https://img.shields.io/pypi/dm/uhsr" alt="Downloads">
   <br/>
   <img src="https://img.shields.io/github/stars/vedaant00/uhsr?style=social" alt="GitHub stars">
-  <img src="https://img.shields.io/github/forks/vedaant00/uhsr?style=social" alt="GitHub forks">
   <img src="https://komarev.com/ghpvc/?username=vedaant00&style=flat-square" alt="Profile views">
 </p>
 
